@@ -1,0 +1,124 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: arial, sans-serif;
+}
+
+body{
+	background: #F5DEB3;
+}
+
+img{
+	width: 90px;
+	height: 90px;
+}
+
+#containerPrincipal{
+	height: 100vh;
+	width: 100vw;
+	background: #F5DEB3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#containerInterno{
+	height: 550px;
+	width: 500px;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid black;
+	border-radius: 5px;
+}
+
+#containerPontuacao{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	font-size: 2em;
+}
+
+.pontuacaoDiv{
+	background: #1C1C1C;
+	width: 150px;
+	height: 70px;
+	border-radius: 0 10px 10px 0;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2em;
+}
+
+.fileira div{
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.fileira{
+	display: flex;
+}
+
+/*--------------*/
+
+.fileira:nth-child(1) div:nth-child(1){
+	border-left: none;
+	border-top: none;
+}
+
+.fileira:nth-child(1) div:nth-child(2){
+	border-top: none;
+}
+
+.fileira:nth-child(1) div:nth-child(3){
+	border-top: none;
+	border-right: none;
+}
+
+/*--------------*/
+
+.fileira:nth-child(2) div:nth-child(1){
+	border-left: none;
+}
+
+.fileira:nth-child(2) div:nth-child(3){
+	border-right: none;
+}
+
+/*--------------*/
+
+.fileira:nth-child(3){
+}
+
+.fileira:nth-child(3) div:nth-child(1){
+	border-left: none;
+	border-bottom: none;
+}
+
+.fileira:nth-child(3) div:nth-child(2){
+	border-bottom: none;
+}
+
+.fileira:nth-child(3) div:nth-child(3){
+	border-bottom: none;
+	border-right: none;
+}
+
+
+/*.bola{
+	display: block;
+	width: 90px;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+	border-radius: 10em;
+}*/
